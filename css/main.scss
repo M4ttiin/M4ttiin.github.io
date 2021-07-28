@@ -4,14 +4,8 @@
 }
 body {
     background-color:#F2F2F2;
-    margin: 0em;
+    margin: 0;
     font-family: "Poppins";
-    
-    .N {
-        padding: 3em 2em;
-        text-align: center;
-        font-size: 1.5em;
-    }
 }
 .navbar {
     background-color: white;
@@ -21,6 +15,7 @@ body {
         font-weight:bold;
         color: black;
         font-size: 1.2em;
+        
 
         span {
             color: #007AF3;
@@ -28,6 +23,7 @@ body {
     }
     nav {
         display: none;
+        
     }
     
     .container {
@@ -46,7 +42,7 @@ a {
 ul {
     list-style-type:none;
     margin: 0;
-   padding: 0;
+    padding: 0;
 }
 
 section {
@@ -87,6 +83,13 @@ section {
 .OP {
     color: white;
     background-color: rgb(0, 0, 22);
+    background-image:url(https://wallpapercave.com/wp/wp8345945.png), 
+    url(https://images3.alphacoders.com/106/thumb-1920-1062991.jpg), 
+    url(https://wallpapercave.com/wp/wp7074888.png);
+    background-size: 1500px 1000px;
+    background-position: top, center, bottom;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    
     text-align: center;
     .OP1 {
     
@@ -122,7 +125,19 @@ section {
     .OP4 {
         letter-spacing: .3em;
         text-transform: uppercase;
-        background-color: #007AF3;
+        background-color: rgb(190, 1, 1);
+        padding: .6em 1.3em;
+        border-radius: 5em;
+        text-decoration-color: none;
+        margin-bottom: .4em;
+        display: inline-block;
+        font-weight: 500;
+    }
+    .OP5 {
+        letter-spacing: .3em;
+        color: black;
+        text-transform: uppercase;
+        background-color: white;
         padding: .6em 1.3em;
         border-radius: 5em;
         text-decoration-color: none;
@@ -137,24 +152,46 @@ section {
 .song {
     text-align: center;
     color: white;
-    background-image: url(https://i.ytimg.com/vi/hkHpp2mE8Ks/mqdefault.jpg);
+    background-image: url(https://i.pinimg.com/originals/46/c6/70/46c670b28625886226f1fdd154e4e78e.jpg);
+    img {
+        width: 200%;;
+    }
+    .column1 {
+        float: left;
+        width: 40%;
+        padding: 10px;
+        height: 300px;
+    }
+    .column2 {
+        
+        float:right;
+        width: 50%;
+        padding: 10px;
+        height: 200px;
+    }
+    .row::after {
+        content: "";
+        display: table;
+        clear: both;
+    }    
     li {
         
-        background-color: purple;
+        background-color: rgb(76, 49, 145);
         border-style:groove;
         display:table;
-        border-color: rgb(177, 13, 177);
-        
+        border-color: rgb(90, 7, 184);
+        border-radius: 5px;
     }
     p {
-        background-color: purple;
+        background-color: rgb(76, 49, 145);
         border-style: groove;
-        border-color: rgb(177, 13, 177);
-
+        border-color: rgb(113, 13, 228);
+        border-radius: 5px;
+        display: inline-block;
     }
     .tr {
         text-decoration-color: none;
-        background-color: purple;
+        background-color: rgb(76, 49, 145);
         margin-top: 3em;
         font-weight: 500;
         letter-spacing: .1em;
@@ -189,7 +226,7 @@ section {
     }
 }
 nav.menu-btn {
-    display: block;
+    display: inline-block;
 }
 nav {
         position: fixed;
@@ -198,25 +235,19 @@ nav {
         right: 0;
         top: 0;
         background: #20272E;
-        height: 100vh;
+        height: 100%;
         padding: 1em;
     li {
-        img {
-            margin: 3em 3em 3em 3em;
-            width: 3em;
-            position:relative
-
-            
-        }
+       
         a {
             color: white;
             text-decoration: none;
-            display: block;
+            display: inline;
             position: relative;
             font-size: 1.3em;
             text-align: right;
-            margin: -4em 3em 3em -3em;
-
+            line-height: 3em;
+            
             &:hover {
                 font-weight: bold;
             }
@@ -225,7 +256,7 @@ nav {
 }
 .mobile-menu-exit {
     float: right;
-    margin: .5em;
+    margin: .3em;
     cursor: pointer;
 }
 .Food {
@@ -274,14 +305,18 @@ nav {
     }
 }
 .Game {
-    background-image: url(https://fsb.zobj.net/crop.php?r=H0t97Cbn4RfQ5sBl3yd6LU8hulI7xZUw7po9ccFMLTFSFHUhaW3pFm3kC40LL-2JyZWGIAgedmjWuAjZ5OCyeCCf3Qc286jgvnZiK83WIypor-KoH3VMATnKpgpl3PQ2GRka0S2IEeMEGPyQ);
-    background-repeat: repeat;
-    background-size: 400px;
+    background-image: url(https://images4.alphacoders.com/885/885543.jpg), 
+    url(https://i0.wp.com/getwallpapers.com/wallpaper/full/e/c/f/936122-popular-good-minecraft-backgrounds-1920x1080-for-1080p.jpg), 
+    url(https://wallpaperaccess.com/full/3669570.jpg);
+    background-repeat:no-repeat, no-repeat, no-repeat;
+    background-position: top, left center, bottom;
+    z-index: 1, 3, 2;
+    background-size: 1500px 1500px 0, 2000px 1500px , 2000px 1500px 0;
     padding: 3.5em;
     color: white;
     font-size: x-large;
-    
-    p {
+    p{
+        
         text-align: center;
         text-transform: uppercase;
         background-color: rgb(134, 35, 247);
@@ -290,10 +325,37 @@ nav {
         padding: .6em 1.3em;
         border-radius: 5em;
     }
+    
+    .Ro{
+        text-align: center;
+        text-transform: uppercase;
+        background-color: rgb(134, 35, 247);
+        display: inline-block;
+        margin-left: 8em;
+        padding: .6em 1.3em;
+        border-radius: 5em;
+    }
+    .Mi{
+        text-align: center;
+        text-transform: uppercase;
+        background-color: rgb(209, 154, 34);
+        display: inline-block;
+        margin-left: 8em;
+        padding: .6em 1.3em;
+        border-radius: 5em;
+    }
+    
     .X1 {
         margin-left: 4em;
     }
     .F1 {
+        text-align: center;
+        text-transform: uppercase;
+        background-color: rgb(88, 84, 94);
+        display: inline-block;
+        margin-left: 8em;
+        padding: .6em 1.3em;
+        border-radius: 5em;
         margin-left: 10em;
     }
     img {
@@ -371,21 +433,64 @@ input[type="submit"] {
     width: unset;
     cursor: pointer;
 }
+.H2 {
+    text-align: center;
+span {
+    color: var(--primary-color);
+}
+}
+.H3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+span {
+    color: var(--primary-color);
+}
+}
+.F {
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    embed {
+        margin-left: 1em;
+    }
+}
+.anm{
+
+    .an {
+    height: 1000px; width: 520px;
+    background: black; margin: auto;
+    animation: matin 5s ease-in-out infinite;
+    background-repeat: no-repeat;
+    }    
+        @keyframes matin{
+      0%{background-image: url(https://i.pinimg.com/564x/0a/3b/a2/0a3ba2ff6bc0fde5131d4e63439f0814.jpg);}
+      50%{background-image: url(https://i.pinimg.com/564x/54/0c/2b/540c2bb128ac34fddbabe5ee05770701.jpg);}
+      100%{background-image: url(https://i.pinimg.com/564x/2f/2b/cb/2f2bcb75b8620e1b6e57a3e84fca930e.jpg);}
+    }
+    @keyframes matin2{
+        0%{background:black ;}
+        100%{background: red;}
+    }
+    animation: matin2 5s ease-in-out ;
+}
 @media only screen and (min-width: 768px) {
 
     .mobile-menu, .mobile-menu-exit {
         display: none;
     }
+
     .navbar .container {
         display: grid;
         grid-template-columns: 180px auto;
         justify-content: unset;
     }
+
     .navbar nav {
         display: flex;
         justify-content: space-between;
         background: none;
-        position: unset;
+        position:unset;
         height: auto;
         width: 100%;
         padding: 0;
@@ -397,18 +502,27 @@ input[type="submit"] {
         a {
             color: black;
             font-size: 1em;
-            padding: .3em 2.8em;
-            
+            padding: .1em 1em;
         }
-        img {
-            padding: .3em 3em;
-            
-        };
+
         ul.primary-nav {
             margin: 0;
         }
+
         li.current a {
             font-weight: bold;
+        }
+        li.go-premium-cta a {
+            color: var(--primary-color);
+            border: 3px solid var(--primary-color);
+            font-weight: bold;
+            border-radius: 5em;
+            margin-top: -.2em;
+
+            &:hover {
+                background: var(--primary-color);
+                color: white;
+            }
         }
     }
 }
@@ -486,6 +600,7 @@ input[type="submit"] {
 
     .contact-section {
         position: relative;
+        color: black;
 
         .container {
             display: flex;
@@ -527,26 +642,5 @@ input[type="submit"] {
             left: 4.5em;
             top: 2em;
         }
-    }
-}
-.H2 {
-    text-align: center;
-span {
-    color: var(--primary-color);
-}
-}
-.H3 {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: lighter;
-span {
-    color: var(--primary-color);
-}
-}
-.F {
-    text-transform: uppercase;
-    text-align: center;
-    embed {
-        margin-left: 1em;
     }
 }
