@@ -60,11 +60,6 @@ body {
             color: #007AF3;
         }
     }
-    nav {
-        display: none;
-        
-    }
-    
     .container {
         display: flex;
         place-content: space-between;
@@ -318,40 +313,8 @@ h4::after {
         text-transform: capitalize;
     }
 }
-nav.menu-btn {
-    display: inline-block;
-}
-nav {
-        position: fixed;
-        z-index: 999;
-        width: 66%;
-        right: 0;
-        top: 0;
-        background: #20272E;
-        height: 100%;
-        padding: 1em;
-    li {
-       
-        a {
-            color: white;
-            text-decoration: none;
-            display: inline;
-            position: relative;
-            font-size: 1.3em;
-            text-align: right;
-            line-height: 3em;
-            
-            &:hover {
-                font-weight: bold;
-            }
-        }
-    }
-}
-.mobile-menu-exit {
-    float: right;
-    margin: .3em;
-    cursor: pointer;
-}
+
+
 .Food {
     background-image: url(https://cdn4.vectorstock.com/i/1000x1000/12/58/creative-pizza-icon-pattern-on-an-orange-gradient-vector-25121258.jpg);
     background-color: rgb(253, 92, 33);
@@ -510,7 +473,6 @@ span {
     }
     animation: matin2 5s ease-in-out ;
 }
-@media only screen and (min-width: 768px) {
     .Game {
         background-image: url(https://images4.alphacoders.com/885/885543.jpg), 
         url(https://i0.wp.com/getwallpapers.com/wallpaper/full/e/c/f/936122-popular-good-minecraft-backgrounds-1920x1080-for-1080p.jpg), 
@@ -570,58 +532,6 @@ span {
         }
     }
 
-    .mobile-menu, .mobile-menu-exit {
-        display: none;
-    }
-
-    .navbar .container {
-        display: grid;
-        grid-template-columns: 180px auto;
-        justify-content: unset;
-    }
-
-    .navbar nav {
-        display: flex;
-        justify-content: space-between;
-        background: none;
-        position:unset;
-        height: auto;
-        width: 100%;
-        padding: 0;
-
-        ul {
-            display: flex;
-        }
-
-        a {
-            color: black;
-            font-size: 1em;
-            padding: .1em 1em;
-        }
-
-        ul.primary-nav {
-            margin: 0;
-        }
-
-        li.current a {
-            font-weight: bold;
-        }
-        li.go-premium-cta a {
-            color: var(--primary-color);
-            border: 3px solid var(--primary-color);
-            font-weight: bold;
-            border-radius: 5em;
-            margin-top: -.2em;
-
-            &:hover {
-                background: var(--primary-color);
-                color: white;
-            }
-        }
-    }
-}
-
-@media only screen and (min-width: 1080px) {
     .container {
         width: 1080px;
         margin: 0 auto;
@@ -651,31 +561,6 @@ span {
         margin-right: 1em;
     }
 
-    ul.features-list {
-        display: block;
-        margin-left: 5em;
-
-        li {
-            font-size: 1.4em;
-
-            &:before {
-                width: 30px;
-                height: 30px;
-            }
-        }
-    }
-
-    .features-section {
-        position: relative;
-    }
-
-    .features-section img {
-        display: block;
-        position: absolute;
-        right: 0;
-        width: 350px;
-        bottom: -2em;
-    }
 
     .testimonials-section ul {
         display: flex;
@@ -694,43 +579,10 @@ span {
         }
     }
 
-    .contact-right {
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 45%;
-        height: 100%;
 
-        iframe {
-            height: 100%;
-        }
-    }
-}
 
-@media only screen and (min-width: 1450px) {
-    .features-section {
 
-        &:before {
-            content: '';
-            position: absolute;
-            width: 10%;
-            height: 20em;
-            background: var(--primary-color);
-            left: 0;
-            top: -4em;
-        }
-
-        &:after {
-            content: '';
-            position: absolute;
-            width: 200px;
-            height: 20em;
-            background: url('../images/dots.svg') no-repeat;
-            left: 4.5em;
-            top: 2em;
-        }
-    }
-}
+//jdida jvere peva
 header {
     height: 90px;
     background: var(--primary-color);
@@ -781,7 +633,7 @@ header {
     display: none;
 }
 
-@media screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
     .menu-toggle-btn {
         position: relative;
         top: 0px;

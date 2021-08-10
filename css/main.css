@@ -68,10 +68,6 @@ body {
   color: #007AF3;
 }
 
-.navbar nav {
-  display: none;
-}
-
 .navbar .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -374,41 +370,6 @@ h4::after {
   text-transform: capitalize;
 }
 
-nav.menu-btn {
-  display: inline-block;
-}
-
-nav {
-  position: fixed;
-  z-index: 999;
-  width: 66%;
-  right: 0;
-  top: 0;
-  background: #20272E;
-  height: 100%;
-  padding: 1em;
-}
-
-nav li a {
-  color: white;
-  text-decoration: none;
-  display: inline;
-  position: relative;
-  font-size: 1.3em;
-  text-align: right;
-  line-height: 3em;
-}
-
-nav li a:hover {
-  font-weight: bold;
-}
-
-.mobile-menu-exit {
-  float: right;
-  margin: .3em;
-  cursor: pointer;
-}
-
 .Food {
   background-image: url(https://cdn4.vectorstock.com/i/1000x1000/12/58/creative-pizza-icon-pattern-on-an-orange-gradient-vector-25121258.jpg);
   background-color: #fd5c21;
@@ -625,212 +586,119 @@ input[type="submit"] {
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .Game {
-    background-image: url(https://images4.alphacoders.com/885/885543.jpg), url(https://i0.wp.com/getwallpapers.com/wallpaper/full/e/c/f/936122-popular-good-minecraft-backgrounds-1920x1080-for-1080p.jpg), url(https://wallpaperaccess.com/full/3669570.jpg);
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: top, left center, bottom;
-    z-index: 1, 3, 2;
-    background-size: 1500px 1500px 0, 2000px 1500px , 2000px 1500px 0;
-    padding: 3.5em;
-    color: white;
-    font-size: x-large;
-  }
-  .Game p {
-    text-align: center;
-    text-transform: uppercase;
-    background-color: #8623f7;
-    display: inline-block;
-    margin-left: 8em;
-    padding: .6em 1.3em;
-    border-radius: 5em;
-  }
-  .Game .Ro {
-    text-align: center;
-    text-transform: uppercase;
-    background-color: #8623f7;
-    display: inline-block;
-    margin-left: 8em;
-    padding: .6em 1.3em;
-    border-radius: 5em;
-  }
-  .Game .Mi {
-    text-align: center;
-    text-transform: uppercase;
-    background-color: #d19a22;
-    display: inline-block;
-    margin-left: 8em;
-    padding: .6em 1.3em;
-    border-radius: 5em;
-  }
-  .Game .X1 {
-    margin-left: 4em;
-  }
-  .Game .F1 {
-    text-align: center;
-    text-transform: uppercase;
-    background-color: #58545e;
-    display: inline-block;
-    margin-left: 8em;
-    padding: .6em 1.3em;
-    border-radius: 5em;
-    margin-left: 10em;
-  }
-  .Game img {
-    margin-left: 5em;
-  }
-  .mobile-menu, .mobile-menu-exit {
-    display: none;
-  }
-  .navbar .container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 180px auto;
-        grid-template-columns: 180px auto;
-    -webkit-box-pack: unset;
-        -ms-flex-pack: unset;
-            justify-content: unset;
-  }
-  .navbar nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    background: none;
-    position: unset;
-    height: auto;
-    width: 100%;
-    padding: 0;
-  }
-  .navbar nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .navbar nav a {
-    color: black;
-    font-size: 1em;
-    padding: .1em 1em;
-  }
-  .navbar nav ul.primary-nav {
-    margin: 0;
-  }
-  .navbar nav li.current a {
-    font-weight: bold;
-  }
-  .navbar nav li.go-premium-cta a {
-    color: var(--primary-color);
-    border: 3px solid var(--primary-color);
-    font-weight: bold;
-    border-radius: 5em;
-    margin-top: -.2em;
-  }
-  .navbar nav li.go-premium-cta a:hover {
-    background: var(--primary-color);
-    color: white;
-  }
+.Game {
+  background-image: url(https://images4.alphacoders.com/885/885543.jpg), url(https://i0.wp.com/getwallpapers.com/wallpaper/full/e/c/f/936122-popular-good-minecraft-backgrounds-1920x1080-for-1080p.jpg), url(https://wallpaperaccess.com/full/3669570.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: top, left center, bottom;
+  z-index: 1, 3, 2;
+  background-size: 1500px 1500px 0, 2000px 1500px , 2000px 1500px 0;
+  padding: 3.5em;
+  color: white;
+  font-size: x-large;
 }
 
-@media only screen and (min-width: 1080px) {
-  .container {
-    width: 1080px;
-    margin: 0 auto;
-  }
-  section {
-    padding: 10em 4em;
-  }
-  .hero .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    text-align: left;
-  }
-  .hero-img {
-    width: 30%;
-    margin-right: 8em;
-  }
-  .hero-cta {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .primary-cta {
-    margin-right: 1em;
-  }
-  ul.features-list {
-    display: block;
-    margin-left: 5em;
-  }
-  ul.features-list li {
-    font-size: 1.4em;
-  }
-  ul.features-list li:before {
-    width: 30px;
-    height: 30px;
-  }
-  .features-section {
-    position: relative;
-  }
-  .features-section img {
-    display: block;
-    position: absolute;
-    right: 0;
-    width: 350px;
-    bottom: -2em;
-  }
-  .testimonials-section ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .testimonials-section ul li {
-    margin: 0 1em;
-  }
-  .contact-section {
-    position: relative;
-    color: black;
-  }
-  .contact-section .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .contact-right {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 45%;
-    height: 100%;
-  }
-  .contact-right iframe {
-    height: 100%;
-  }
+.Game p {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #8623f7;
+  display: inline-block;
+  margin-left: 8em;
+  padding: .6em 1.3em;
+  border-radius: 5em;
 }
 
-@media only screen and (min-width: 1450px) {
-  .features-section:before {
-    content: '';
-    position: absolute;
-    width: 10%;
-    height: 20em;
-    background: var(--primary-color);
-    left: 0;
-    top: -4em;
-  }
-  .features-section:after {
-    content: '';
-    position: absolute;
-    width: 200px;
-    height: 20em;
-    background: url("../images/dots.svg") no-repeat;
-    left: 4.5em;
-    top: 2em;
-  }
+.Game .Ro {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #8623f7;
+  display: inline-block;
+  margin-left: 8em;
+  padding: .6em 1.3em;
+  border-radius: 5em;
+}
+
+.Game .Mi {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #d19a22;
+  display: inline-block;
+  margin-left: 8em;
+  padding: .6em 1.3em;
+  border-radius: 5em;
+}
+
+.Game .X1 {
+  margin-left: 4em;
+}
+
+.Game .F1 {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #58545e;
+  display: inline-block;
+  margin-left: 8em;
+  padding: .6em 1.3em;
+  border-radius: 5em;
+  margin-left: 10em;
+}
+
+.Game img {
+  margin-left: 5em;
+}
+
+.container {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 10em 4em;
+}
+
+.hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+}
+
+.hero-img {
+  width: 30%;
+  margin-right: 8em;
+}
+
+.hero-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.primary-cta {
+  margin-right: 1em;
+}
+
+.testimonials-section ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.testimonials-section ul li {
+  margin: 0 1em;
+}
+
+.contact-section {
+  position: relative;
+  color: black;
+}
+
+.contact-section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 header {
@@ -893,7 +761,7 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
   .menu-toggle-btn {
     position: relative;
     top: 0px;
