@@ -7,6 +7,45 @@ body {
     margin: 0;
     font-family: "Poppins";
 }
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.Up {
+    position: fixed;
+    right: 28px;
+    bottom: 28px;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    display: none;
+.GoUp {
+    position:fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    color: rgb(201, 29, 52);
+    display: none;
+
+}
+}
+.logo {
+    text-decoration: none;
+    font-weight:bold;
+    color: black;
+    font-size: 1.2em;
+    
+
+    span {
+        color: white;
+    }
+}
 .navbar {
     background-color: white;
     padding: 1em;
@@ -58,6 +97,12 @@ section {
 }
 
 .left-col {
+    p {
+        color: black;
+        opacity: 0;
+        transform: translateY(3rem);
+        animation: fadeInUp 2s ease 5s forwards;
+    }
 
     .suphead {
         font-weight: lighter;
@@ -78,8 +123,55 @@ section {
     }
     img {
         margin-right: .5em;
+        font-family:  monospace;
     }
 }
+h4 {
+    place-content: center;
+    text-align: center;
+    position: relative;
+    width: max-content;
+    margin: auto;
+}
+h4::before,
+h4::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+h4::before {
+    background: white;
+    animation: typewriter 4s steps(48) forwards 1s;
+}
+h4::after {
+    width: .125em;
+    background: black;
+    animation: typewriter 4s steps(48) forwards 1s, 
+    blink 1000ms steps(48) infinite;
+
+}
+
+@keyframes typewriter {
+    to {left: 100%}
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+
+@keyframes fadeInUp{
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 .OP {
     color: white;
     background-color: rgb(0, 0, 22);
@@ -89,7 +181,6 @@ section {
     background-size: 1500px 1000px;
     background-position: top, center, bottom;
     background-repeat: no-repeat, no-repeat, no-repeat;
-    
     text-align: center;
     .OP1 {
     
@@ -149,6 +240,7 @@ section {
         font-size: 1.3em;
     }
 }
+
 .song {
     text-align: center;
     color: white;
@@ -222,7 +314,8 @@ section {
         padding: 2em 1em;
         width: 80%;
         margin: 0 auto 5em auto;
-        border-radius: 1em;   
+        border-radius: 1em;
+        text-transform: capitalize;
     }
 }
 nav.menu-btn {
@@ -304,64 +397,7 @@ nav {
         }
     }
 }
-.Game {
-    background-image: url(https://images4.alphacoders.com/885/885543.jpg), 
-    url(https://i0.wp.com/getwallpapers.com/wallpaper/full/e/c/f/936122-popular-good-minecraft-backgrounds-1920x1080-for-1080p.jpg), 
-    url(https://wallpaperaccess.com/full/3669570.jpg);
-    background-repeat:no-repeat, no-repeat, no-repeat;
-    background-position: top, left center, bottom;
-    z-index: 1, 3, 2;
-    background-size: 1500px 1500px 0, 2000px 1500px , 2000px 1500px 0;
-    padding: 3.5em;
-    color: white;
-    font-size: x-large;
-    p{
-        
-        text-align: center;
-        text-transform: uppercase;
-        background-color: rgb(134, 35, 247);
-        display: inline-block;
-        margin-left: 8em;
-        padding: .6em 1.3em;
-        border-radius: 5em;
-    }
-    
-    .Ro{
-        text-align: center;
-        text-transform: uppercase;
-        background-color: rgb(134, 35, 247);
-        display: inline-block;
-        margin-left: 8em;
-        padding: .6em 1.3em;
-        border-radius: 5em;
-    }
-    .Mi{
-        text-align: center;
-        text-transform: uppercase;
-        background-color: rgb(209, 154, 34);
-        display: inline-block;
-        margin-left: 8em;
-        padding: .6em 1.3em;
-        border-radius: 5em;
-    }
-    
-    .X1 {
-        margin-left: 4em;
-    }
-    .F1 {
-        text-align: center;
-        text-transform: uppercase;
-        background-color: rgb(88, 84, 94);
-        display: inline-block;
-        margin-left: 8em;
-        padding: .6em 1.3em;
-        border-radius: 5em;
-        margin-left: 10em;
-    }
-    img {
-        margin-left: 5em;
-    }
-}
+
 .Car {
     color: white;
     background-color: rgb(41, 40, 40);
@@ -475,6 +511,64 @@ span {
     animation: matin2 5s ease-in-out ;
 }
 @media only screen and (min-width: 768px) {
+    .Game {
+        background-image: url(https://images4.alphacoders.com/885/885543.jpg), 
+        url(https://i0.wp.com/getwallpapers.com/wallpaper/full/e/c/f/936122-popular-good-minecraft-backgrounds-1920x1080-for-1080p.jpg), 
+        url(https://wallpaperaccess.com/full/3669570.jpg);
+        background-repeat:no-repeat, no-repeat, no-repeat;
+        background-position: top, left center, bottom;
+        z-index: 1, 3, 2;
+        background-size: 1500px 1500px 0, 2000px 1500px , 2000px 1500px 0;
+        padding: 3.5em;
+        color: white;
+        font-size: x-large;
+        p{
+            
+            text-align: center;
+            text-transform: uppercase;
+            background-color: rgb(134, 35, 247);
+            display: inline-block;
+            margin-left: 8em;
+            padding: .6em 1.3em;
+            border-radius: 5em;
+        }
+        
+        .Ro{
+            text-align: center;
+            text-transform: uppercase;
+            background-color: rgb(134, 35, 247);
+            display: inline-block;
+            margin-left: 8em;
+            padding: .6em 1.3em;
+            border-radius: 5em;
+        }
+        .Mi{
+            text-align: center;
+            text-transform: uppercase;
+            background-color: rgb(209, 154, 34);
+            display: inline-block;
+            margin-left: 8em;
+            padding: .6em 1.3em;
+            border-radius: 5em;
+        }
+        
+        .X1 {
+            margin-left: 4em;
+        }
+        .F1 {
+            text-align: center;
+            text-transform: uppercase;
+            background-color: rgb(88, 84, 94);
+            display: inline-block;
+            margin-left: 8em;
+            padding: .6em 1.3em;
+            border-radius: 5em;
+            margin-left: 10em;
+        }
+        img {
+            margin-left: 5em;
+        }
+    }
 
     .mobile-menu, .mobile-menu-exit {
         display: none;
@@ -542,14 +636,7 @@ span {
         justify-content: space-between;
         text-align: left;
 
-        .left-col {
-            margin: 3em 3em 0 5em;
-
-            h1 {
-                font-size: 3em;
-                width: 90%;
-            }
-        }
+        
     }
 
     .hero-img {
@@ -641,6 +728,184 @@ span {
             background: url('../images/dots.svg') no-repeat;
             left: 4.5em;
             top: 2em;
+        }
+    }
+}
+header {
+    height: 90px;
+    background: var(--primary-color);
+}
+
+.inner-width {
+    max-width: 1000px;
+    padding: 0 10px;
+    margin: auto;
+    i {
+        display: none;
+    }
+}
+
+.logo {
+    float: left;
+    .logo-png {
+    height: 90px;
+
+    }
+}
+
+.navigation-menu {
+    float: right;
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+    a{
+        margin-left: 10px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding: 12px 20px;
+        border-radius: 4px;
+        transition: .3s linear;
+    }
+    a:hover {
+        background: #fff;
+        color: var(--primary-color);
+        transform: scale(1.1);
+    }
+}
+.menu-toggle-btn {
+    float: right;
+    line-height: 90px !important;
+    font-size: 26px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .menu-toggle-btn {
+        position: relative;
+        top: 0px;
+        display: block !important;
+    }
+
+    .navigation-menu {
+        position: fixed;
+        width: 100%;
+        max-width: 400px;
+        background: var(--primary-color);
+        top: 90px;
+        right: 0;
+        display: none;
+        padding: 20px 40px;
+        box-sizing: border-box;
+        z-index: 3;
+
+        .navigation-menu::before {
+            content: "";
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid red;
+            position: absolute;
+            top: -10px;
+            right: 10px;
+        }
+        img {
+            position: absolute;
+            left: 10px;
+            padding: 10px 0;
+        }
+
+        a {
+            display: block;
+            margin: 10px 0;
+        }
+    }
+    .navigation-menu.active {
+        display: block;
+    }
+    .song {
+        text-align: center;
+        color: white;
+        background-image: url(https://i.pinimg.com/originals/46/c6/70/46c670b28625886226f1fdd154e4e78e.jpg);
+        background-size: 1610px;
+    }
+    .OP {
+        color: white;
+        background-color: rgb(0, 0, 22);
+        background-image:url(https://wallpapercave.com/wp/wp8345945.png);
+        background-size: 1500px 1000px;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 1800px;
+        text-align: center;
+    }
+    .quotes {
+        background-color: #007AF3;
+        color: white;
+        text-align: center;
+        img {
+            width: 5em;
+            height: 5em;
+            background: #006BD6;
+            border: 5px solid #006BD6;
+            border-radius: 30%;
+            margin-top: -4.5em;
+        }
+        li {
+            background-color: #006BD6;
+            padding: 2em 1em;
+            width: 80%;
+            margin: 0 auto 5em auto;
+            border-radius: 1em;
+            text-transform: capitalize;
+        }
+    }
+    .Game {
+        background-image: url(https://images.unsplash.com/photo-1603009516102-14d93178f395?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80);
+        background-repeat:no-repeat;
+        background-size: 1000px;
+        color: white;
+        p{
+        
+            text-align: center;
+            text-transform: capitalize;
+            background-color: #e74c3c;
+            display: inline-block;
+            padding: .5em 1.3em;
+            margin-bottom: 10px;
+            border-radius: 5em;
+        }
+        
+        .Ro{
+            text-align: center;
+            text-transform: capitalize;
+            background-color: #e74c3c;
+            margin-left: 35%;
+            padding: .6em 1.3em;
+            border-radius: 5em;
+        }
+        .Mi{
+            text-align: center;
+            text-transform: capitalize;
+            background-color: #e74c3c;
+            margin-left: 35%;
+            padding: .6em 1.3em;
+            border-radius: 5em;
+        }
+        
+        .X1 {
+            margin-left: 25%;
+        }
+        .F1 {
+            text-align: center;
+            text-transform: capitalize;
+            background-color: #e74c3c;
+            margin-left: 40%;
+            padding: .6em 1.3em;
+            border-radius: 5em;
+        }
+        img {
+            margin-left: 5em;
         }
     }
 }
